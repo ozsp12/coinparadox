@@ -55,7 +55,6 @@ This work discusses the concept of roulette, the generated curves that occur whe
 
 
 # Social Media
-
 Currículo Lattes: http://lattes.cnpq.br/6730251976463283  
 Webpage: https://ozsp12.github.io/  
 Substack: https://substack.com/@olsp1982  
