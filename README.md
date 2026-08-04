@@ -20,23 +20,21 @@ Computational companion to the article **“Roullete curves, coin paradox and Ar
 
 A roulette is the trajectory of a point attached to a curve that rolls, without slipping, along another curve. For a circle of radius \(r\) rolling outside a fixed circle of radius \(R\), the traced epicycloid is
 
-\[
+$$
 x(\theta)=(R+r)\cos\theta-r\cos\!\left(\frac{R+r}{r}\theta\right),
 \qquad
 y(\theta)=(R+r)\sin\theta-r\sin\!\left(\frac{R+r}{r}\theta\right).
-\]
+$$
 
-The external rotation count is \((R+r)/r\). For two equal coins, \(R=r\), this gives two rotations: one from rolling through the fixed circumference and one from transporting the moving frame around the fixed coin.
+The external rotation count is \((R+r)/r\). For two equal coins, \(R=r\), this gives two rotations: one from rolling through the fixed circumference and one from transporting the moving frame around the fixed coin. For internal rolling, the corresponding hypocycloid is
 
-For internal rolling, the corresponding hypocycloid is
-
-\[
+$$
 x(\theta)=(R-r)\cos\theta+r\cos\!\left(\frac{R-r}{r}\theta\right),
 \qquad
 y(\theta)=(R-r)\sin\theta-r\sin\!\left(\frac{R-r}{r}\theta\right).
-\]
+$$
 
-Aristotle’s wheel involves a different constraint. Two concentric circles are rigidly connected, but only the outer circle rolls without slipping on the supporting line. The inner circle therefore translates and rotates with the assembly while sliding relative to a line tangent to it; its motion cannot be treated as an independent no-slip rolling condition.
+Aristotle’s wheel involves a different constraint. Two concentric circles are rigidly connected, but only the outer circle rolls without slipping on the supporting line. The inner circle, therefore, translates and rotates with the assembly while sliding relative to a line tangent to it; its motion cannot be treated as an independent no-slip rolling condition.
 
 ## Repository contents
 
