@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "Please cite the published article when using this repository."
+title: "Coin paradox and Aristotle's wheel: computational materials"
+type: software
+authors:
+  - family-names: Santos-Pereira
+    given-names: Osvaldo L.
+    orcid: "https://orcid.org/0000-0003-2231-517X"
+repository-code: "https://github.com/ozsp12/coinparadox"
+url: "https://github.com/ozsp12/coinparadox"
+keywords:
+  - roulette curves
+  - coin paradox
+  - Aristotle's wheel
+  - epicycloid
+  - hypocycloid
+  - physics education
+preferred-citation:
+  type: article
+  authors:
+    - family-names: Santos-Pereira
+      given-names: Osvaldo L.
+      orcid: "https://orcid.org/0000-0003-2231-517X"
+  title: "Roullete curves, coin paradox and Aristotle's wheel paradox"
+  journal: "Revista Brasileira de Ensino de Física"
+  volume: 47
+  year: 2025
+  doi: "10.1590/1806-9126-RBEF-2025-0401"

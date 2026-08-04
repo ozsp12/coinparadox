@@ -1,70 +1,101 @@
-# Coin paradox and the Aristotle wheel paradox
+# Roulette curves, the coin paradox, and Aristotle’s wheel
 
-This repository contains the source code and data used in the article:
+Computational companion to the article **“Roullete curves, coin paradox and Aristotle’s wheel paradox”**, published in *Revista Brasileira de Ensino de Física*, volume 47, e20250401 (2025). The repository implements the parametric geometry of epicycloids and hypocycloids and uses these curves to explain two apparent paradoxes of rolling motion.
 
-Osvaldo L. Santos-Pereira. Roullete curves, coin paradox and Aristotle’s wheel paradox. Rev Bras Ensino Fís. vol. 47, e20250401 (2025)  
-doi:  https://doi.org/10.1590/1806-9126-RBEF-2025-0401  
-🔗 HTML version: [https://www.scielo.br/j/rbef/a/4JqG3XG435VBQT3FV8ryFhS/?lang=en ](https://www.scielo.br/j/rbef/a/4JqG3XG435VBQT3FV8ryFhS/?lang=en)  
-🔗 PDF version: [https://www.scielo.br/j/rbef/a/Fw5FynMVn34trTTMCzTVLnv/?format=pdf&lang=en](https://www.scielo.br/j/rbef/a/4JqG3XG435VBQT3FV8ryFhS/?format=pdf&lang=en)  
-🔗 ArXiV: [https://arxiv.org/abs/2512.00123](https://arxiv.org/abs/2512.00123)  
-ORCID: https://orcid.org/0000-0003-2231-517X
+> The spelling “Roullete” is retained only when reproducing the published title. The standard mathematical term is **roulette**.
 
-Published in the *Revista Brasileira de Ensino de Física* (RBEF) — an open-access, peer-reviewed Brazilian journal indexed in major academic databases — the article presents a pedagogical and code base approach to famous circular motion apparent paradoxes: the coin paradox and the Aristotle wheel paradox.
+![Examples of epicycloids](figures/fig5.png)
 
-# Abstract
+## Publication
 
-This work discusses the concept of roulette, the generated curves that occur when one curve rolls without slipping along another, tracing the path of a fixed point. The coin paradox and Aristotle's wheel paradox are used as pedagogical motivations to discuss the parametric equations of epicycloids and hypocycloids, providing a geometrical intuition for the mathematical derivations and computational implementation of those curves. Python code is provided to motivate the application of the derived parametric equations, resulting in concrete visualizations and animations.
+**Santos-Pereira, O. L.** (2025). Roullete curves, coin paradox and Aristotle’s wheel paradox. *Revista Brasileira de Ensino de Física, 47*, e20250401. [https://doi.org/10.1590/1806-9126-RBEF-2025-0401](https://doi.org/10.1590/1806-9126-RBEF-2025-0401)
 
-# References
-[01] J.C. Maxwell, *XXXV on Trans. Roy. Soc. Edin.* **16**, 519 (1849).  
-[02] E.H. Lockwood, in: *A Book of Curves* (Cambridge University Press, Cambridge, 1967).  
-[03] H. Cundy and A. Rollett, in: *Mathematical Models* (Tarquin Publications, Stradbroke, 1989), 3 ed.  
-[04] M. Gardner, *The Sixth Book of Mathematical Games from Scientific American* (University of Chicago Press, Chicago, 1984).  
-[05] R.C. Yates, *A Handbook on Curves and Their Properties* (J.W. Edwards, Ann Arbor, 1952).  
-[06] J.D. Lawrence, *A Catalog of Special Plane Curves* (Dover, New York, 1972).  
-[07] D. Zwillinger, in: *CRC Standard Mathematical Tables and Formulae* (CRC Press, Boca Raton, 1996), 3 ed.  
-[08] M. Gardner, in: *Mathematical Carnival* (Alfred A. Knopf, New York, 1975).  
-[09] T. Pappas, in: *The Joy of Mathematics* (World Public./Tetra, San Carlos, 1989).  
-[10] H. Steinhaus, *Mathematical Snapshots* (Dover, New York, 1999), 3 ed.  
-[11] I.E. Drabkin, *Aristotle’s Wheel: Notes on the History of a Paradox* **9**, 162 (1950).  
-[12] D.W. Ballew, *Math. Teach.* **65**, 507 (1972).  
-[13] P. Costabel, *Math. Teacher* **61**, 527 (1968).  
-[14] A.K. Bartlett, *Popular Astronomy* **12**, 649 (1904).  
-[15] D.R. Abad, *Rev. Bras. Ensino Fís.* **43**, e20200482 (2021).  
-[16] D. Halliday, R. Resnick and J. Walker, *Fundamentals of Physics Extended* (Wiley, Hoboken, 2013), 10 ed.  
-[17] Error found in S.A.T. question, *The New York Times Archives*, May 25, 1982, available in: https://www.nytimes.com/1982/05/25/us/error-found-in-sat-question.html  
-» https://www.nytimes.com/1982/05/25/us/error-found-in-sat-question.html  
-[18] MINDYOURDECISIONS, *Why did everyone miss this SAT Math question?*, available in: https://www.youtube.com/watch?v=kN3AOMrnEUs  
-» https://www.youtube.com/watch?v=kN3AOMrnEUs  
-[19] J. Murtagh, *The SAT Problem That Everybody Got Wrong*, available in: https://www.scientificamerican.com/article/the-sat-problem-that-everybody-got-wrong/  
-» https://www.scientificamerican.com/article/the-sat-problem-that-everybody-got-wrong/  
-[20] VERITASIUM YOUTUBE CHANNEL, *The SAT Question Everyone Got Wrong*, available in: https://www.youtube.com/watch?v=FUHkTs-Ipfg  
-» https://www.youtube.com/watch?v=FUHkTs-Ipfg  
-[21] J.J. Uicker, G.R. Pennock and J.E. Shigley, *Theory of Machines and Mechanisms* (Oxford University Press, New York, 2003).  
-[22] B. Paul, *Kinematics and Dynamics of Planar Machinery* (Prentice Hall, Englewood Cliffs, 1979).  
-[23] J.A. Boyle, arXiv:1406.1736v1 (2014).  
-[24] N.C. Rana and P.S. Joag, *Classical Mechanics* (Tata McGraw-Hill, Noida, 2001).  
-[25] E.A. Whitman, *American Mathematical Monthly* **50**, 309 (1943).  
-[26] S. Wagon, *Mathematica in Action* (Springer Science & Business Media, New York, 1999).  
-[27] R. Courant and H. Robbins, *What Is Mathematics?: An Elementary Approach to Ideas and Methods* (Oxford University Press, Oxford, 1996), 2 ed.  
-[28] S.T. Thornton and J.B. Marion, *Classical Dynamics of Particles and Systems* (Brooks/Cole, Pacific Grove, 2004), 5 ed.  
-[29] VERITASIUM YOUTUBE CHANNEL, available in: https://www.youtube.com/@veritasium, accessed in: 15/10/2025.  
-» https://www.youtube.com/@veritasium  
-[30] 3BLUE1BROWN YOUTUBE CHANNEL, available in: https://www.youtube.com/c/3blue1brown, accessed in: 15/10/2025.  
-» https://www.youtube.com/c/3blue1brown  
+- [HTML at SciELO](https://www.scielo.br/j/rbef/a/4JqG3XG435VBQT3FV8ryFhS/?lang=en)
+- [Published PDF](https://www.scielo.br/j/rbef/a/4JqG3XG435VBQT3FV8ryFhS/?format=pdf&lang=en)
+- [arXiv:2512.00123](https://arxiv.org/abs/2512.00123)
+- [Portuguese manuscript](roullete_curves_coin_paradox_portuguese.pdf)
+- [Complete bibliography](REFERENCES.md)
 
+## Mathematical scope
 
-# Social Media
-Currículo Lattes: http://lattes.cnpq.br/6730251976463283  
-Webpage: https://ozsp12.github.io/  
-Substack: https://substack.com/@olsp1982  
-GitHub: https://github.com/ozsp12  
-ResearchGate: https://www.researchgate.net/profile/Osvaldo-Santos-Pereira  
-Google Scholar: https://scholar.google.com/citations?user=HIZp0X8AAAAJ&hl=en  
-ORCID: https://orcid.org/0000-0003-2231-517X  
-LinkedIn: https://www.linkedin.com/in/ozsp12  
-YouTube: https://www.youtube.com/@ozlsp12    
-TikTok: https://www.tiktok.com/@ozsp12  
-Patreon: https://www.patreon.com/ozsp12  
-Medium: https://medium.com/@ozsp12  
-X (Twitter): https://x.com/ozsp12 
+A roulette is the trajectory of a point attached to a curve that rolls, without slipping, along another curve. For a circle of radius \(r\) rolling outside a fixed circle of radius \(R\), the traced epicycloid is
+
+\[
+x(\theta)=(R+r)\cos\theta-r\cos\!\left(\frac{R+r}{r}\theta\right),
+\qquad
+y(\theta)=(R+r)\sin\theta-r\sin\!\left(\frac{R+r}{r}\theta\right).
+\]
+
+The external rotation count is \((R+r)/r\). For two equal coins, \(R=r\), this gives two rotations: one from rolling through the fixed circumference and one from transporting the moving frame around the fixed coin.
+
+For internal rolling, the corresponding hypocycloid is
+
+\[
+x(\theta)=(R-r)\cos\theta+r\cos\!\left(\frac{R-r}{r}\theta\right),
+\qquad
+y(\theta)=(R-r)\sin\theta-r\sin\!\left(\frac{R-r}{r}\theta\right).
+\]
+
+Aristotle’s wheel involves a different constraint. Two concentric circles are rigidly connected, but only the outer circle rolls without slipping on the supporting line. The inner circle therefore translates and rotates with the assembly while sliding relative to a line tangent to it; its motion cannot be treated as an independent no-slip rolling condition.
+
+## Repository contents
+
+```text
+coinparadox/
+├── coinparadox.py      # reusable equations and validation
+├── code_coin_paradox_aristotle_wheel_paradox.ipynb
+├── figures/            # publication figures
+├── auxiliary_files/    # prototypes and figure-generation notebooks
+├── *.mp4               # rendered epicycloid and hypocycloid animations
+├── REFERENCES.md
+├── CITATION.cff
+└── requirements.yml
+```
+
+The main notebook is the reader-facing computational companion. The notebooks in `auxiliary_files/` document the development of individual figures and are retained for provenance. Generated outputs are not embedded in the notebooks because the final PNG and MP4 artifacts are already versioned.
+
+## Installation
+
+Create the reproducible Conda environment:
+
+```bash
+git clone https://github.com/ozsp12/coinparadox.git
+cd coinparadox
+conda env create -f requirements.yml
+conda activate coinparadox
+jupyter lab
+```
+
+The core equations can also be used directly:
+
+```python
+import numpy as np
+from coinparadox import epicycloid, hypocycloid, rotation_count
+
+theta = np.linspace(0.0, 2.0 * np.pi, 2_000)
+x_external, y_external = epicycloid(theta, R=3.0, r=1.0)
+x_internal, y_internal = hypocycloid(theta, R=3.0, r=1.0)
+assert rotation_count(R=1.0, r=1.0, internal=False) == 2.0
+```
+
+To regenerate the animations from the notebook, `ffmpeg` must be available in the active environment. Static calculations and figures require only NumPy and Matplotlib.
+
+## Reproducibility
+
+- Radii are validated explicitly: \(R>0\), \(r>0\), and \(R>r\) for internal rolling.
+- Mathematical regression tests cover closure, initial points, the equal-coin rotation count, and the \(R=2r\) hypocycloid degeneracy.
+- Notebook outputs are cleared before versioning; figures and videos are stored as separate artifacts.
+
+Run the tests with:
+
+```bash
+python -m unittest discover -s tests -v
+```
+
+## Citation
+
+The preferred citation is the published article above. Repository metadata are also available in [`CITATION.cff`](CITATION.cff), which enables GitHub’s **Cite this repository** function.
+
+## Author
+
+**Dr. Osvaldo L. Santos-Pereira** — [Academic webpage](https://ozsp12.github.io/) · [Lattes](http://lattes.cnpq.br/6730251976463283) · [ORCID](https://orcid.org/0000-0003-2231-517X) · [Google Scholar](https://scholar.google.com/citations?user=HIZp0X8AAAAJ&hl=en) · [ResearchGate](https://www.researchgate.net/profile/Osvaldo-Santos-Pereira) · [GitHub](https://github.com/ozsp12) · [LinkedIn](https://www.linkedin.com/in/ozsp12) · [Substack](https://substack.com/@olsp1982) · [Medium](https://medium.com/@ozsp12) · [YouTube](https://www.youtube.com/@ozlsp12) · [X](https://x.com/ozsp12)

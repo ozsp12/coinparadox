@@ -1,0 +1,4 @@
+*.ipynb linguist-language=Jupyter\ Notebook
+*.png binary
+*.mp4 binary
+*.pdf binary
